@@ -7,7 +7,6 @@ const f14g = {
 }
 
 window.sessionStorage.setItem ("key", JSON.stringify(f14g))
-JSON.parse(sessionStorage.getItem ("key")).body
 
 const form = document.createElement ("form")
 form.action = ""
@@ -50,7 +49,7 @@ function moveButton(event) {
 function displayData (event) {
     event.preventDefault ()
     const valeur = new FormData (event.currentTarget).get ("valeur").toString().trim ()
-    if (valeur === "flag itlab ctf") {
+    if (valeur === "flag itlab") {
         const error = document.createElement ("p")
         const div = document.querySelector ('.hint')
         error.innerHTML = `hint : ${JSON.parse(sessionStorage.getItem ("key")).body}Y2MwbXBsMWV9`
