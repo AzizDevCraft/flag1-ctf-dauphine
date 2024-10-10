@@ -48,3 +48,8 @@ p::selection {
     color: fff;
     background: transparent;
 }
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+}
